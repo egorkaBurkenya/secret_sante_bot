@@ -9,6 +9,10 @@ class Registration(StatesGroup):
 
 class Hub(StatesGroup):
     Main = State()
+    ChangeName = State()
+    ChangePhoto = State()
+    ChangeWishList = State()
+    ChangeHateList = State()
 
 class _UserState(StatesGroup):
     Registration = Registration()

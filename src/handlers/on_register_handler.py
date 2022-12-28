@@ -62,6 +62,5 @@ async def on_register_get_hatelist_handler(message: Message, state: FSMContext):
             ),
         reply_markup=InlineKeyboardMarkup(
             inline_keyboard=[[InlineKeyboardButton(text="Нажми✅", callback_data="hub")]]
-            )
-            )
+))
     await UserState.Hub.Main.set()
